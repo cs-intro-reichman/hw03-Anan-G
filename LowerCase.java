@@ -7,11 +7,6 @@ public class LowerCase {
 
     }
 
-   /**
-    * Returns a string which is identical to the original string, 
-    * except that all the upper-case letters are converted to lower-case letters.
-    * Non-letter characters are left as is.
-    */
     public static String lowerCase(String s) {
 
         String newS = "";
