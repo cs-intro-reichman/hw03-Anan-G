@@ -16,7 +16,7 @@ public class LoanCalc {
 		double loan = Double.parseDouble(args[0]);
 		double rate = Double.parseDouble(args[1]);
 		int n = Integer.parseInt(args[2]);
-		System.out.println("Loan Sum = " + loan + ", Interest Rate = " + rate + "%, and Periods = " + n);
+		System.out.println("Loan sum = " + loan + ", interest Rate = " + rate + "%, periods = " + n);
 
 		// Computes the periodical payment using brute force search
 		System.out.print("Periodical payment, using brute force: ");
@@ -71,7 +71,7 @@ public class LoanCalc {
 
 			while(H-L >= epsilon){
 
-				if(endBalance(loan, rate, n, g)*endBalance(loan, rate, n, L) > 0) {
+				if(endBalance(loan, rate, n, g) * endBalance(loan, rate, n, L) > 0) {
 					
 					L = g; 
 
